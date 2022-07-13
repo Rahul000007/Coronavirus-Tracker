@@ -9,13 +9,15 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-    <body style=" background: linear-gradient(to right, #fb5283, #5c45be);">
-    <div class="container" >
-
+<body style=" background: linear-gradient(to right, #fb5283, #5c45be); ">
+<div class="container">
     <h1>Coronavirus Tracker Application</h1>
     <p>This application lists the current number of cases reported across the globe</p>
 
-    <div class="jumbotron">
+    <div class="jumbotron" style="border-radius: 50px;
+                                 background: #fcfcfc;
+                                 box-shadow:  5px 5px 100px #656565,
+                                  -5px -5px 100px #ffffff;">
         <h1 class="display-4" th:text="${totalReportedCases}"></h1>
         <p class="lead">Total cases reported as of today</p>
         <hr class="my-4">
